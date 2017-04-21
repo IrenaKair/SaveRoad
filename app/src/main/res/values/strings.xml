@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">DROGI_BHP</string>
+    <string name="width">szerokośc transportowanego materiału</string>
+    <string name="count">Oblicz</string>
+    <string name="clear">Wyczyść</string>
+    <string name="vehicles1">Silnikowe środki transportu ruch jednokierunkowy</string>
+    <string name="vehicles2">Silnikowe środki transportu ruch dwukierunkowy</string>
+    <string name="vehicles3">Silnikowe środki transportu ruch jednokierunkowy + piesi</string>
+    <string name="vehicles4">Silnikowe środki transportu ruch dwukierunkowy + piesi</string>
+    <string name="vehiclesN">Transport Ręczny</string>
+    <string name="ped1">Transport ręczny jednokierunkowy</string>
+    <string name="ped2">transport ręczny dwukierunkowy</string>
+
+    <string name="info1">Zaznacz przeznaczenie drogi</string>
+
+    <string name="noMotor1">Bezsilnikowe środki transportu ruch jednokierunkowy</string>
+    <string name="noMotor2">Bezsilnikowe środki transportu ruch dwukierunkowy</string>
+    <string name="noMotor3">Bezsilnikowe środki transportu ruch jednokierunkowy + piesi</string>
+    <string name="noMotor4">Bezsilnikowe środki transportu ruch dwukierunkowy + piesi</string>
+    <string name="write">Min szerokość drogi wynosi :</string>
+    <string name="informacje">informacje</string>
+    <string name="close">zamknij</string>
+
+    <string name="title_activity_info">info</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="informacjaAPP">
+
+
+Informacje o aplikacji "\n" "\n"
+Aplikacja ma charakter pomocniczy i orientacyjny w obliczaniu dróg transportowych i :"\n""\n"
+ * wytwórca nie ponosi odpowiedzialności za wadliwe działanie aplikacji *"\n"
+ * wytwórca nie ponosi odpowiedzialności za skutki powstałe na skutek dokonanych obliczań *"\n"
+ * aplikacji używać jedynie w celach pomocniczych *"\n"
+ * kazdorazowo szerokość drogi należy uzgodnić w właściwymi służbami *"\n"
+ * aplikacja nie służy do obliczania dróg, dojść przeciwpożarowych *"\n""\n"
+        * uwagi i spostrzeżenia mile widziane *"\n""\n"
+        * kontakt kaczmarekrob13@gmail.com *
+
+   </string>
+
+
+</resources>
