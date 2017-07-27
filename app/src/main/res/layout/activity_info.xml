@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#fe7f5940"
 
-    tools:context="com.example.robertkaczmarek.drogi_bhp.info">
+    tools:context="com.irena.robertkaczmarek.drogi_bhp.info">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

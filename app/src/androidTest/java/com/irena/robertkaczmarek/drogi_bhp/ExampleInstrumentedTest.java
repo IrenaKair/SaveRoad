@@ -1,4 +1,4 @@
-package com.example.robertkaczmarek.drogi_bhp;
+package com.irena.robertkaczmarek.drogi_bhp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

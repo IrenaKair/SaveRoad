@@ -10,14 +10,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#fe7f5940"
 
-    tools:context="com.example.robertkaczmarek.drogi_bhp.bhp">
+    tools:context="com.irena.robertkaczmarek.drogi_bhp.bhp">
 
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/widthMaterial"
         android:hint="@string/width"
+        android:textSize="25dp"
         android:layout_marginTop="2dp"
         android:inputType="numberDecimal"
         android:gravity="center"
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/vehicles"
         android:layout_below="@+id/info1"
+        android:layout_marginTop="15dp"
         >
         <RadioButton
             android:layout_width="wrap_content"
@@ -117,7 +119,7 @@
     </RadioGroup>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:id="@+id/count"
@@ -127,13 +129,11 @@
         android:text="@string/count"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/clear"
-        android:layout_marginLeft="40dp"
-        android:layout_toRightOf="@id/count"
-        android:layout_alignBottom="@id/count"
-        android:layout_alignTop="@+id/count"
+        android:layout_below="@+id/count"
+        android:layout_marginTop="20dp"
         android:text="@string/clear"
         android:onClick="Clear"
         android:background="#feffff00"/>

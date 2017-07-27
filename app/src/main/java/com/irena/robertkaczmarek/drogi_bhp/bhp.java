@@ -1,4 +1,4 @@
-package com.example.robertkaczmarek.drogi_bhp;
+package com.irena.robertkaczmarek.drogi_bhp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -114,6 +114,7 @@ public class bhp extends AppCompatActivity {
         catch (Exception e){
             Toast.makeText(getApplicationContext(), "Nie poadłeś szerokości transportowanego materiału",
                     Toast.LENGTH_LONG).show();
+            vehicles.clearCheck();
         }
     }
     @Override

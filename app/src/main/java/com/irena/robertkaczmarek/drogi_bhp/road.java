@@ -1,4 +1,4 @@
-package com.example.robertkaczmarek.drogi_bhp;
+package com.irena.robertkaczmarek.drogi_bhp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

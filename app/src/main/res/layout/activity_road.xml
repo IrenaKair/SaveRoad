@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/ic_drogab"
 
-    tools:context="com.example.robertkaczmarek.drogi_bhp.road">
+    tools:context="com.irena.robertkaczmarek.drogi_bhp.road">
 
 
     <TextView
