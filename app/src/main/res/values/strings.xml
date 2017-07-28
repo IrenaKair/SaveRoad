@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">DROGI TRANSPORTOWE-BHP</string>
-    <string name="width"><font size = "15">szerokość środka transportowego z ładunkiem bądź ładunku</font></string>
+    <string name="width"><font size = "18">szerokość środka transportowego z ładunkiem bądź ładunku</font></string>
     <string name="count">Oblicz</string>
     <string name="clear">Wyczyść</string>
     <string name="vehicles1">Silnikowe środki transportu ruch jednokierunkowy</string>

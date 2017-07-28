@@ -11,47 +11,21 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class bhp extends AppCompatActivity {
-    double a;
-    Double widthRoad;
+     double a;
+     Double widthRoad;
     RadioGroup vehicles;
-    EditText widthMaterial;
-    String widthMat;
-    Double width;
+     EditText widthMaterial;
+     String widthMat;
+     Double width;
+    String widthRoad1;
     Toast t;
+    boolean checked = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bhp);
 
     }
-    public void counWidthRoad(View view) {
-
-
-        if (a < 120) {
-            widthRoad = 120.00;
-        } else {
-            widthRoad = a;
-        }
-
-        String widthRoad1 = String.format("%.2f", widthRoad);
-        Intent go = new Intent(bhp.this, road.class);
-        go.putExtra(road.RESULT, widthRoad1);
-        startActivity(go);
-        widthMaterial = (EditText) findViewById(R.id.widthMaterial);
-        widthMaterial.setText("");
-        vehicles = (RadioGroup) findViewById(R.id.vehicles);
-        vehicles.clearCheck();
-    }
-
-    public void Clear(View view) {
-        widthMaterial = (EditText) findViewById(R.id.widthMaterial);
-        widthMaterial.setText("");
-         vehicles = (RadioGroup) findViewById(R.id.vehicles);
-        vehicles.clearCheck();
-
-    }
-
-
     public void CountRoad(View view) {
 
       /*  if ( widthMaterial == null){
@@ -59,64 +33,113 @@ public class bhp extends AppCompatActivity {
                              Toast.LENGTH_LONG).show();
         }
         else { */
-        try{
+
+        try {
             widthMaterial = (EditText) findViewById(R.id.widthMaterial);
-
-
             widthMat = widthMaterial.getText().toString();
             width = Double.parseDouble(widthMat);
 
-            switch (view.getId()) {
-                case R.id.p1:
-                    a = width + 30;
+                switch (view.getId()) {
+                    case R.id.p1:
+                        a = width + 30;
+                        checked = true;
+                        break;
+                    case R.id.p2:
+                        checked = true;
+                        a = (2 * width) + 60;
+                        break;
+                    case R.id.motorNO1:
+                        checked = true;
+                        a = width + 60;
+                        break;
+                    case R.id.motorNo2:
+                        checked = true;
+                        a = (2 * width) + 90;
+                        break;
+                    case R.id.motorNo1P:
+                        checked = true;
+                        a = width + 90;
+                        break;
+                    case R.id.motorNo2P:
+                        checked = true;
+                        a = (2 * width) + 180;
+                        break;
+                    case R.id.motor1:
+                        checked = true;
+                        a = width + 60;
+                        break;
 
-                    break;
-                case R.id.p2:
+                    case R.id.motor2:
+                        checked = true;
+                        a = (2 * width) + 90;
+                        break;
+                    case R.id.motor1P:
+                        checked = true;
+                        a = width + 100;
+                        break;
+                    case R.id.motor2P:
+                        checked = true;
+                        a = (2 * width) + 200;
+                        break;
+                    default:
+                        break;
+                }
 
-                    a = (2 * width) + 60;
-                    break;
-                case R.id.motorNO1:
 
-                    a = width + 60;
-                    break;
-                case R.id.motorNo2:
 
-                    a = (2 * width) + 90;
-                    break;
-                case R.id.motorNo1P:
+            } catch(Exception e){
 
-                    a = width + 90;
-                    break;
-                case R.id.motorNo2P:
+                Toast.makeText(getApplicationContext(), "Nie poadłeś szerokości transportowanego materiału",
+                        Toast.LENGTH_LONG).show();
+                // widthMaterial.setText("");
 
-                    a = (2 * width) + 180;
-                    break;
-                case R.id.motor1:
-                    a = width + 60;
-                    break;
 
-                case R.id.motor2:
-
-                    a = (2 * width) + 90;
-                    break;
-                case R.id.motor1P:
-
-                    a = width + 100;
-                    break;
-                case R.id.motor2P:
-
-                    a = (2 * width) + 200;
-                    break;
-                default:
-                    break;
             }
+
         }
-        catch (Exception e){
-            Toast.makeText(getApplicationContext(), "Nie poadłeś szerokości transportowanego materiału",
-                    Toast.LENGTH_LONG).show();
+
+    public void counWidthRoad(View view) {
+        if (widthMaterial != null && checked == true)
+             {
+            if (a < 120) {
+                widthRoad = 120.00;
+            } else {
+                widthRoad = a;
+            }
+
+            widthRoad1 = String.format("%.2f", widthRoad);
+            Intent go = new Intent(bhp.this, road.class);
+            go.putExtra(road.RESULT, widthRoad1);
+            startActivity(go);
+            widthMaterial = (EditText) findViewById(R.id.widthMaterial);
+            //   widthMaterial.setText("");
+
+            vehicles = (RadioGroup) findViewById(R.id.vehicles);
             vehicles.clearCheck();
+
+        }
+        else
+        {
+           Toast.makeText(getApplicationContext(), "Oznacz rodzaj transportu lub szerokość transportowanego materiału",
+                    Toast.LENGTH_LONG).show();
+            widthMaterial = (EditText) findViewById(R.id.widthMaterial);
+
+
+            vehicles = (RadioGroup) findViewById(R.id.vehicles);
+           vehicles.clearCheck();
+            checked = true;
+
         }
     }
+    public void Clear(View view) {
+        widthMaterial = (EditText) findViewById(R.id.widthMaterial);
+        widthMaterial.setText("");
+         vehicles = (RadioGroup) findViewById(R.id.vehicles);
+        vehicles.clearCheck();
+            checked = false;
+        widthMaterial = null;
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
