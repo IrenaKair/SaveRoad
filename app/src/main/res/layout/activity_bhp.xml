@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/vehicles"
         android:layout_below="@+id/info1"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         >
         <RadioButton
             android:layout_width="wrap_content"
@@ -120,8 +120,8 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/count"
         android:layout_below="@+id/vehicles"
         android:onClick="counWidthRoad"
@@ -130,7 +130,7 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:id="@+id/clear"
         android:layout_below="@+id/count"
         android:layout_marginTop="20dp"

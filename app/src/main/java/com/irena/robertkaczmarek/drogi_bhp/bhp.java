@@ -89,10 +89,11 @@ public class bhp extends AppCompatActivity {
 
             } catch(Exception e){
 
-                Toast.makeText(getApplicationContext(), "Nie poadłeś szerokości transportowanego materiału",
+                Toast.makeText(getApplicationContext(), "Nie podałeś szerokości transportowanego materiału",
                         Toast.LENGTH_LONG).show();
                 // widthMaterial.setText("");
-
+            vehicles = (RadioGroup) findViewById(R.id.vehicles);
+            vehicles.clearCheck();
 
             }
 
